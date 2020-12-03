@@ -7,5 +7,5 @@ spec:
   - name: ubuntu
     image: ubuntu:18.04
     ports:
-    - containerPorts: 80
+    - containerPort: 80
     command: ["tail","-f","/dev/null"]
