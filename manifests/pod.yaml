@@ -3,7 +3,8 @@ kind: Pod
 metadata:
   name: ubuntu
 spec:
+  activeDeadlineSeconds: 57
   containers:
   - name: ubuntu
     image: ubuntu:18.04
-    command: ["tail","-f","-n","100","/dev/null"]
+    command: ["tail","-f","/dev/null"]
