@@ -5,7 +5,7 @@ metadata:
   labels:
     app: ubuntu
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: ubuntu
@@ -16,5 +16,5 @@ spec:
     spec:
       containers:
       - name: ubuntu
-        image: ubuntu:18.04
+        image: ubuntu:20.04
         command: ["tail","-f","/dev/null"]
